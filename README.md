@@ -1,5 +1,6 @@
 # mm-docker-elasticsearch
 Run the elasticsearch server with kopf, aws, and bigdesk plugins
+Also configure the es server to publish its ip based on the aws local_ip so that ec2 discovery works properly
 
 *Example run
 docker run -p 9200:9200 -p 9300:9300 rsmith/docker-mm-elasticsearch
