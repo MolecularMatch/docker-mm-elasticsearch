@@ -1,4 +1,4 @@
-cluster.name: mm_elasticsearch
+cluster.name: CLUSTER_NAME
 script.disable_dynamic: false
 bootstrap.mlockall: true
 network.publish_host: HOST_IP
