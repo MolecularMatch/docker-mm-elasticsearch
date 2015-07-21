@@ -1,5 +1,6 @@
 cluster.name: CLUSTER_NAME
-script.disable_dynamic: false
+script.inline: on
+script.indexed: on
 bootstrap.mlockall: true
 network.publish_host: HOST_IP
 index.auto_expand_replicas: 0-all
