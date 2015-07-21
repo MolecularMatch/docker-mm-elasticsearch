@@ -1,4 +1,4 @@
-FROM elasticsearch:1.4.5
+FROM elasticsearch:1.7
 
 ADD config/elasticsearch.yml /usr/share/elasticsearch/config/
 ADD config/run.sh /usr/bin/
