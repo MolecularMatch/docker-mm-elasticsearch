@@ -3,7 +3,6 @@ script.inline: on
 script.indexed: on
 bootstrap.mlockall: true
 network.publish_host: HOST_IP
-index.auto_expand_replicas: 0-all
 discovery.zen.ping.multicast.enabled: false
 discovery.type: ec2
 discovery.ec2.ping_timeout: "30s"

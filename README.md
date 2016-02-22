@@ -8,6 +8,7 @@ docker run -p 9200:9200 -p 9300:9300 rsmith/docker-mm-elasticsearch
 ##Docker 
 * ES_JAVA_OPTS = -Xms4g -Xmx4g
 * ES_HEAP_SIZE = 4g
+* CLUSTER_NAME = <whatever cluster name you'd like>
 
 
 ## Linux
