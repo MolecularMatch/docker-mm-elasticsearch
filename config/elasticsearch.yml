@@ -3,6 +3,7 @@ script.inline: on
 script.indexed: on
 bootstrap.mlockall: true
 node.data: true
+index.auto_expand_replicas: 0-all
 network.publish_host: HOST_IP
 discovery.zen.ping.multicast.enabled: false
 discovery.type: ec2
