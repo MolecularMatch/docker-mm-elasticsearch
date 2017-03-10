@@ -10,3 +10,4 @@ discovery.type: ec2
 discovery.ec2.ping_timeout: "30s"
 cloud.aws.region: "us-east"
 plugin.mandatory: "cloud-aws"
+http.max_initial_line_length: "8k"
