@@ -1,6 +1,6 @@
 FROM docker.elastic.co/elasticsearch/elasticsearch:6.1.2
 
-COPY --chown=elasticsearch:elasticsearch config/elasticsearch.yml /usr/share/elasticsearch/config/
+COPY config/elasticsearch.yml /usr/share/elasticsearch/config/
 ADD config/run.sh /usr/bin/
 
 RUN chmod +x /usr/bin/run.sh
