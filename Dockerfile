@@ -7,6 +7,6 @@ RUN chmod +x /usr/bin/run.sh
 
 #Install plugins
 RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install repository-s3
-RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install dicovery-ec2
+RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install discovery-ec2
 
 CMD ["/usr/bin/run.sh"]
