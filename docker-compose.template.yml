@@ -1,0 +1,24 @@
+version: '2.2'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.1.2
+    container_name: elasticsearch
+    environment:
+      - cluster.name=<cluster_name>
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms32g -Xmx32g"
+      - http.max_initial_line_length=16kb
+      - indices.query.bool.max_clause_count=10000
+      - discovery.zen.hosts_provider=ec2
+      - cloud.node.auto_attributes=true
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - /home/ubuntu/esdata:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+    logging:
+      driver: syslog
