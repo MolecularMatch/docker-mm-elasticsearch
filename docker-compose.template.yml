@@ -1,7 +1,7 @@
 version: '2.2'
 services:
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.1.2
+    image: rsmith/docker-mm-elasticsearch:6.1.2
     container_name: elasticsearch
     environment:
       - cluster.name=<cluster_name>
